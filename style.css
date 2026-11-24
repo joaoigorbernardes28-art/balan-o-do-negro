@@ -1,0 +1,271 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #17265c;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #e6b647;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e6b647;
+}
+
+/* Página inicial */
+
+#inicio {
+    background: linear-gradient(135deg, #17265c, #3264b6);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#inicio span {
+    color: #e6b647;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#inicio h2 {
+    font-size: 46px;
+    margin: 20px 0;
+}
+
+#inicio p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+/* Botões */
+
+.botao {
+    display: inline-block;
+    background-color: #e6b647;
+    color: #17265c;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #f5cf70;
+    transform: translateY(-3px);
+}
+
+/* Seções */
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #17265c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#inicio h2,
+#contato h2 {
+    color: white;
+}
+
+#sobre {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+#sobre p {
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cards das aulas */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border-top: 5px solid #3264b6;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #17265c;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+.card .botao {
+    margin-top: 15px;
+}
+
+/* Galeria */
+
+#galeria {
+    text-align: center;
+    background-color: white;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Contato */
+
+#contato {
+    background-color: #17265c;
+    color: white;
+    text-align: center;
+}
+
+#contato p {
+    margin-bottom: 25px;
+}
+
+.botao-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: #12351f;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #20bd5a;
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #101a40;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+/* Adaptação para celulares */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    #inicio {
+        padding: 65px 20px;
+    }
+
+    #inicio h2 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+}
